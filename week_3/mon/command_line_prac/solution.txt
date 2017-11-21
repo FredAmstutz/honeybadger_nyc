@@ -1,0 +1,10 @@
+mkdir my-favorite-things
+cd my-favorite-things
+mkdir books
+
+cd books
+mkdir J.R.R.-Tolkien
+cd J.R.R.-Tolkien
+touch Lord-of-the-Rings
+echo "TEXT" >> Lord-of-the-Rings
+

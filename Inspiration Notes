@@ -1,0 +1,26 @@
+<!-- Web App Case Studies: -->
+
+    <Google>
+
+    Overall, I appreciate the work that Google has put in to its suite of products since expanding from search. The Google Drive and all its tools helped reshape the office suite and changed what it means to collaborate on a document. Microsoft has done a good job of catching up, but from a web perspective I think Google's products are still superior. At least for the average user.
+
+    Google Docs and Sheets are extremely useful tools for when a group needs to work together on one document simultaneously from multiple devices. I'm curious to learn more about the technology that enables it, but I know that same tech can be seen in other applications right now to see live updating of various types of content. It's a really interesting paradigm  of which that I think we might only begin to be seeing the possible applications.
+
+    From a design perspective they've done a good job fleshing out a simple color scheme that features a range of different colors and finding a home for each of those in its products.
+
+    <Robinhood>
+
+    Although not technically a web app (yet, releasing soon), one app that I really like from a design and development perspective is Robinhood. Robinhood is a simple mobile app designed to make investing in the stock market easier and more accessible to the casual investor. It's a good app for young people getting their start in the world, or anyone looking into putting their moneu away somewhere.
+
+    What I really like about Robinhood is its intuitive navigation. In the world of apps and web sites that handle sensitive financial information, it's critical that users feel comfortable that their information is secure and in good hands. It's easy to follow, and takes what was once and arduous (and expensive) process and makes it fast and cheap. Users can easily contribute funds from a bank account into a Robinhood trading account, browse basic stock metrics, and quickly make buy or sell decisions within the app.
+
+    The color scheme, featuring primarily a green and white palette, is common to financial apps for obvious reasons. One clever technique is that the color scheme changes from a green focus to red based on a stock or portfolio's performance over a given span.
+
+<!-- General Design Features and Trends: -->
+
+    I've noticed that many useful websites and web apps have been build on a similar structure for the last five years. One of the main features of this is making the landing page a scrolling "site" with a number of different bands that feature different content. These bands are typically equal to the height of the viewport, and offer the user just enough information to be familiar with the brand, organization, etc. This seems like an effective, easy way to get the message across in a short amount of time, and is something that I've grown to appreciate being comfortable with. I would guess that this evolution grew out of users' eventual preference of scrolling over clicking.
+
+    Mousewheel scrolling is also a really interesting event to develop off of because it could be used for other things besides just scrolliing up and down the page. Manipulating dials, moving sliders, moving through carousels and more would all be really cool ways to use mousewheel events to interact with the web page.
+
+    Like I mentioned about Google earlier, color schemes have also had a large impact on web design. Designers are leveraging high-resolution display across millions of devices now to create different user experiences through color. To me, color plays a huge role in intuitive navigation, especially when viewing a site or app holisitcally, as opposed to reading everything single thing on every single page.
+
