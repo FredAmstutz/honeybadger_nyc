@@ -1,13 +1,16 @@
 .section-one {
-    color: black;
+    color: white;
 }
 
 .header-news-main {
     background-image: url("https://boygeniusreport.files.wordpress.com/2016/03/12-inch-retina-macbook.jpg?quality=98&strip=all&w=782");
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #000;
     height: 400px;
     border: 1px solid black;
+    opacity: 1;
+    will-change: opacity;
 }
 
 .header-news-sub {
@@ -49,42 +52,81 @@
     }
 }
 
+.content-a-teaser {
+    width: 100%;
+    height: 50%;
+    background-image: url("http://yaffa-cdn.s3.amazonaws.com/adnews/live/images/dmImage/StandardImage/match-point4_E48F07B0-6F04-11E6-936A16D2E7002836.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content-b-teaser {
+    width: 100%;
+    height: 50%;
+    background-image: url("https://www.imore.com/sites/imore.com/files/styles/large/public/field/image/2014/06/current_weather_iphone_siri_hero.jpg?itok=M-7_-qVb");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content-c-teaser {
+    width: 100%;
+    height: 50%;
+    background-image: url("https://media2.wnyc.org/i/800/0/c/80/1/shutterstock_216311500.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content-d-teaser {
+    width: 100%;
+    height: 50%;
+    background-image: url("https://images-na.ssl-images-amazon.com/images/I/71YnAVMPz4L._SX385_.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content-e-teaser {
+    width: 100%;
+    height: 50%;
+    background-image: url("https://cdn.geekwire.com/wp-content/uploads/2014/03/iPhone5s3UP.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content-f-teaser {
+    width: 100%;
+    height: 50%;
+    background-image: url("http://onlysp.com/wp-content/uploads/2016/05/cbf63e0c-dec4-41d1-9ef0-7d3002fc5230-2060x1166.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content-g-teaser {
+    width: 100%;
+    height: 50%;
+    background-image: url("https://cdn-7.nikon-cdn.com/Images/Learn-Explore/Photography-Techniques/2012/Bokeh-for-Beginners/Media/Lindsay-Silverman-Bokeh-lights.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content-h-teaser {
+    width: 100%;
+    height: 50%;
+    background-image: url("http://www.minitool.com/images-mt/ios-recovery/broken-iphone-data-recovery-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .content-a, .content-b, .content-c, .content-d, .content-e, .content-f, .content-g, .content-h {
     height: 300px;
     border: 1px solid black;
-}
-
-.content-a img {
-    width: 100%;
-}
-
-.content-b img {
-    width: 100%;
-    overflow: hidden;
-}
-
-.content-c img {
-    width: 100%;
-}
-
-.content-d img {
-    width: 100%;
-}
-
-.content-e img {
-    width: 100%;
-}
-
-.content-f img {
-    width: 100%;
-}
-
-.content-g img {
-    width: 100%;
-}
-
-.content-h img {
-    width: 100%;
 }
 
 .section-three {
@@ -98,6 +140,33 @@
 .other-news {
     height: 700px;
     border: 1px solid black;
+}
+
+.other-news-teaser-a {
+    width: 100%;
+    height: 30%;
+    background-image: url("https://cdn.geekwire.com/wp-content/uploads/2014/03/iPhone5s3UP.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.other-news-teaser-b {
+    width: 100%;
+    height: 30%;
+    background-image: url("https://s3.envato.com/files/31319902/screenshot1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.other-news-teaser-c {
+    width: 100%;
+    height: 30%;
+    background-image: url("https://cnet2.cbsistatic.com/img/hjo7_UY6ykIh_9cfttUZYaiF7V0=/770x433/2017/06/21/39c814c4-4909-43e8-aa0d-89eff3aced37/apple-macbook-12-inch-2017-01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .other-news img {
