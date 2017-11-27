@@ -1,3 +1,105 @@
-section {
-    color: red;
+.section-one {
+    color: black;
+}
+
+.header-news-main {
+    background-image: url("https://boygeniusreport.files.wordpress.com/2016/03/12-inch-retina-macbook.jpg?quality=98&strip=all&w=782");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    border: 1px solid black;
+}
+
+.header-news-sub {
+    height: 400px;
+    border: 1px solid black;
+}
+
+.sub-news-one {
+    background-image: url("http://static1.1.sqspcdn.com/static/f/458611/19221793/1342019134567/microsoft-store.jpg?token=3Z1PDVsSAcgzUQWw%2BofEXjdkh00%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+
+.sub-news-two {
+    background-image: url("https://cdn.dopl3r.com/memes_files/bill-gates-billgates-has-anyone-actually-got-salmonella-from-eating-raw-cookie-dough-or-are-people-just-trying-to-stop-me-from-living-my-life-236-236-retweets-favorites-420-O7aRe.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+
+.section-two h1 {
+    color: orange;
+}
+
+.latest-news {
+    height: 600px;
+}
+
+@media screen and (max-width : 992px) {
+    .latest-news-md, .other-news-md {
+        display: none;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .latest-news-sm, .other-news-sm {
+        display: none;
+    }
+}
+
+.content-a, .content-b, .content-c, .content-d, .content-e, .content-f, .content-g, .content-h {
+    height: 300px;
+    border: 1px solid black;
+}
+
+.content-a img {
+    width: 100%;
+}
+
+.content-b img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.content-c img {
+    width: 100%;
+}
+
+.content-d img {
+    width: 100%;
+}
+
+.content-e img {
+    width: 100%;
+}
+
+.content-f img {
+    width: 100%;
+}
+
+.content-g img {
+    width: 100%;
+}
+
+.content-h img {
+    width: 100%;
+}
+
+.section-three {
+    height: 700px;
+}
+
+.section-three h1 {
+    color: orange;
+}
+
+.other-news {
+    height: 700px;
+    border: 1px solid black;
+}
+
+.other-news img {
+    width: 100%;
 }
