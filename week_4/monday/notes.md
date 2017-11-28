@@ -13,3 +13,22 @@
 # BOOLEAN
 
 true / false
+<<<<<<< HEAD
+=======
+
+# NULL
+
+null
+
+# UNDEFINED
+
+undefined
+
+# VARIABLE STORAGE
+
+var tacos = 'PIZZA'; we can do anything yayyy
+
+let taco = 'PIZZA'; no left hand redeclaration
+
+const taco = 'PIZZA'; no left hand or right hand assignments
+>>>>>>> 43b661bf75226377cd0824468bee6f119181e899
