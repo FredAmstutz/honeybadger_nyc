@@ -1,21 +1,17 @@
 .section-one {
     color: white;
+    padding-top: 40px;
 }
 
 .header-news-main {
     background-image: url("https://boygeniusreport.files.wordpress.com/2016/03/12-inch-retina-macbook.jpg?quality=98&strip=all&w=782");
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #000;
     height: 400px;
-    border: 1px solid black;
-    opacity: 1;
-    will-change: opacity;
 }
 
 .header-news-sub {
     height: 400px;
-    border: 1px solid black;
 }
 
 .sub-news-one {
@@ -126,7 +122,6 @@
 
 .content-a, .content-b, .content-c, .content-d, .content-e, .content-f, .content-g, .content-h {
     height: 300px;
-    border: 1px solid black;
 }
 
 .section-three {
@@ -139,7 +134,6 @@
 
 .other-news {
     height: 700px;
-    border: 1px solid black;
 }
 
 .other-news-teaser-a {
@@ -169,6 +163,3 @@
     background-position: center;
 }
 
-.other-news img {
-    width: 100%;
-}

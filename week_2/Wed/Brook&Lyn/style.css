@@ -18,6 +18,7 @@ li {
 
 h1 {
     font-size: 3.5em;
+    margin-left: 20px;
 }
 
 li:hover {
@@ -34,9 +35,18 @@ li:hover {
     margin: 0 auto;
 }
 
+.text_content {
+    width: 960px;
+    margin: auto;
+}
+
 .bottom_links {
     display: table;
     margin: 0 auto;
+}
+
+.footer {
+    margin-left: 13px;
 }
 
 .date a, .blog a {
