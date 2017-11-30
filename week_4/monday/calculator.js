@@ -22,5 +22,5 @@ else if (operation === '/') {
     console.log(result);
 } 
 else {
-    console.log('you suck brah');
+    console.log('try again');
 }
