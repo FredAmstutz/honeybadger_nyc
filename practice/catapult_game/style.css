@@ -1,0 +1,40 @@
+body {
+    background-image: url("./castle-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 64px;
+    padding-left: 60px;
+}
+
+button {
+    display: block;
+    width: 200px;
+    height: 60px;
+    margin: 5px auto 20px auto;
+}
+
+button:hover {
+    background-color: #b20000;
+    color: white;
+}
+
+.main {
+    width: 100%;
+}
+
+.container {
+    display: block;
+    margin: 110px auto auto 60px;
+    text-align: center;
+    background-color: white;
+    width: 30%;
+}
+
+.instructions {
+    margin: 10px auto 10px auto;
+}
