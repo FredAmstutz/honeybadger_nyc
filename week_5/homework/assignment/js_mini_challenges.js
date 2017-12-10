@@ -32,5 +32,17 @@ else {
     alert('Your number was ' + number + ' and it is greater than 100.');
 }
 
-// Declare a function that takes a name as an argument and tells the user what name they've entered. Try running it after it has been declared.
+// 4. Declare a function that takes a name as an argument and tells the user what name they've entered. Try running it after it has been declared.
 
+function myFunc(userInput) {
+    alert(userInput);
+};
+
+// 5. Declare a function that depending upon which virtual 'door' was entered tells the user they've received a different 'prize' in an alert. After declaring the function, try running it with different options. There must be at least 3 doors.
+
+function gameshow(door) {
+    const numberOne = 'sports car';
+    const numberTwo = 'luxury vacation';
+    const numberThree = 'a diet ginger ale';
+    alert(); 
+}
