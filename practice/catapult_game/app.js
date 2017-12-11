@@ -1,8 +1,8 @@
-var castle = 10;
+let castle = 10;
 
 function catapult() {
-    const number = Math.random();
-    while (castle !== 0) {
+    var number = Math.random();
+    while (castle) {
         if (number > 0.5) {
             castle -= 2;
             document.getElementById("result").innerHTML = 'You struck the castle for 2 damage.';
@@ -14,5 +14,5 @@ function catapult() {
             return false;
         }
     }
-    alert('You destroyed the castle. Refresh the page to play again.');
+    alert('You destroyed the castle. Refresh to play again.');
 }
