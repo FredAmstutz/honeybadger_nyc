@@ -28,22 +28,4 @@
        document.body.appendChild(footer);
    }
    
-   
-   // window.onload = function() {
-    //     const theTitle = document.getElementsByTagName('title');
-    //     console.log(theTitle);
-       
-    //     const heading = document.getElementById('page-title').innerHTML;
-    //     console.log(heading);
-        
-    //     const list = document.getElementById('awesome-list');
-    //     console.log(list);
-
-    //     let newLi = document.createElement('li');
-    //     newLi.classList.add('awesome-list-item');
-    //     newLi.innerHTML = 'I am the new list item';
-
-    //     list.appendChild
-    // };
-
     
