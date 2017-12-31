@@ -1,0 +1,43 @@
+class Bank(
+    constructor(name, address) {
+        this.name = name;
+        this.address = address; 
+        this.accounts = {}
+    }
+
+    information () {
+        return `${this.name}, ${this.address}`
+    }
+
+    addAccount(name) {
+        this.accounts[name] = new Account();
+    } 
+)
+
+class Account {
+    constructor() {
+        this.balance = 0;
+    }
+
+    deposit(amount) {
+        this.balance += amount
+    }
+
+    withdrawl(amount) {
+        if (this.balance >= amount) {
+            this.balance -= amount
+        } else {
+            return;
+        }
+    }
+}
+
+$(function() {
+    const bank = new Bank('chase', 'New York');
+    bank.addAccount('checking');
+    bank.addAccount('savings');
+
+    function updateBalance() {
+        $('#checking value').val(bank.accounts.checking.balance);
+    }
+})
