@@ -1,0 +1,14 @@
+h1 {
+    padding: 100px 0 100px 0;
+    color: white;
+}
+
+#container {
+    text-align: center;
+    background-color: seagreen;
+    margin: 0 auto;
+    margin-top: 80px;
+    height: 300px;
+    width: 600px;
+
+}
