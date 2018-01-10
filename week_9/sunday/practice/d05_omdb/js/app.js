@@ -3,7 +3,7 @@ $(function() {
 
     $resultsContainer.on('click', '.movie', function() {
         const imdbID = $(this).data('id');
-        getMovieData({i: imdbDB, apikey: '1d747e12'}).then(function(data) {
+        getMovieData({ i: imdbID, apikey: '9c1996d3' }).then(function (data) {
             console.log(data);
         })
     })
@@ -27,7 +27,7 @@ $(function() {
                 poster,
                 title,
                 imdbID
-            }
+            } 
         })
 
         return normalizedMovies;
@@ -49,10 +49,11 @@ $(function() {
         })
     }
 
-    getMovieData(options, { s: 'Batman'})
+    getMovieData({ s: 'Star Wars', apikey: '9c1996d3' })
         .then(normalizedMovies)
         .then(renderMovies)
 });
+
 
 
 
