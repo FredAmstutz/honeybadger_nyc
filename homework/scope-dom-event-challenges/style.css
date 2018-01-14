@@ -1,0 +1,77 @@
+/* ---------- CHALLENGE 1 ------------ */
+
+button {
+    display: inline-block;
+    margin: 50px;
+    height: 40px;
+    width: 80px;
+}
+
+p {
+    display: inline-block;
+}
+
+.cha-1-container{
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* --------- CHALLENGE 2 ---------------*/
+
+.cha-2-h1 {
+    padding: 100px 0 100px 0;
+    color: white;
+}
+
+#cha-2-container {
+    text-align: center;
+    background-color: seagreen;
+    margin: 0 auto;
+    margin-top: 80px;
+    height: 300px;
+    width: 600px;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* -------------- CHALLENGE 3 ---------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------- CHALLENGE 4 ---------- */
+
+#cha-4-submit, button {
+    width: 268px;
+}
+
+#cha-4-password {
+    width: 260px;
+    margin: 10px 0 10px 0;
+}
