@@ -1,40 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./style.css">
-   
     <title>Scope/DOM/Event Challenges</title>
 </head>
 <body>
-    <h1>CHALLENGE 1</h1>
     <div class='cha-1-container'>
+        <h1>CHALLENGE 1</h1>
         <div class='cha-1-content'>
             <button id='cha-1-button1'>Button 1</button>
             <p id='cha-1-text'></p>
             <button id='cha-1-button2'>Button 2</button>
         </div>
     </div>
-
-    <h1>CHALLENGE 2</h1>
-    <div id='cha-2-container'>
-        <h1 class='cha-2-h1'>Don't hover over me</h1>
+    
+    <div class='cha-2-container'>
+        <h1>CHALLENGE 2</h1>
+        <div class='cha-2-div'>
+            <h1 class='cha-2-h1'>Don't hover over me</h1>
+        </div>
     </div>
 
-    <h1>CHALLENGE 3</h1>
-    <h1 id='cha-3-heading'></h1>
+    <div class='cha-3-container'>
+        <h1>CHALLENGE 3</h1>
+        <p>The key you pressed is: </p><span id="cha-3-key"></span>
+    </div>
 
-    <h1>CHALLENGE 4</h1>
-    <h1 id='cha-4-heading'>Please Sign Up Below</h1>
     <div class='cha-4-container'>
-        <form>
-            <input id='cha-4-username' placeholder='Username'></input>
-            <input id='cha-4-email' placeholder='Email'></input></br>
-            <input id='cha-4-password' placeholder='Password'></input></br>
-            <button id='cha-4-submit'>Submit</button>
-        </form>
+        <h1>CHALLENGE 4</h1>
+        <h1 id='cha-4-heading'>Please Sign Up Below</h1>
+            <form>
+                <input id='cha-4-username' placeholder='Username'></input>
+                <input id='cha-4-email' placeholder='Email'></input></br>
+                <input id='cha-4-password' placeholder='Password'></input></br>
+                <button id='cha-4-submit'>Submit</button>
+            </form>
     </div>
     <script type="text/javascript" src="./app.js"></script>
 </body>

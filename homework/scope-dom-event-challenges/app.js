@@ -18,11 +18,9 @@ button2.addEventListener('click', function() {
 
 const theDiv = document.getElementById('cha-2-container');
 
-theDiv.addEventListener('mouseover', function() {
-    alert('Hey, I told you not to hover over me!');
-})
-
-
+// theDiv.addEventListener('mouseover', function() {
+//     alert('Hey, I told you not to hover over me!');
+// })
 
 
 
@@ -30,16 +28,10 @@ theDiv.addEventListener('mouseover', function() {
 // When the user presses that key, the text of the H1 should show the value of the key they have pressed.
 // Example: If the user presses "J", the text inside the H1 should be "J".
 
-document.addEventListener("keypress", function(event){ 
-    if (!keypress) document.getElementById("cha-3-heading").innerHTML = ""
-    document.getElementById("cha-3-heading").innerHTML += event.key
-    keypress = true;
-});
-
-
-
-
-
+document.addEventListener('keypress', function(e) {
+    let text = document.getElementById('cha-3-key');
+    text.innerHTML = e.key;
+})
 
 // 4. Create an HTML page with a form. The form should include inputs for a username, email, and password as well as a submit button.
 // In a Javascript file, write code that does the following things:

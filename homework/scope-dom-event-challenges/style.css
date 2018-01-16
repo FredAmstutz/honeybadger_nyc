@@ -1,3 +1,14 @@
+/* ---------- GLOBAL STYLES ------------ */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.cha-1-container, .cha-2-container, .cha-3-container, .cha-4-container {
+    margin: 0 0 100px 0;
+}
+
 /* ---------- CHALLENGE 1 ------------ */
 
 button {
@@ -16,21 +27,14 @@ p {
     text-align: center;
 }
 
-
-
-
-
-
-
-
-/* --------- CHALLENGE 2 ---------------*/
+/* ---------- CHALLENGE 2 ------------ */
 
 .cha-2-h1 {
     padding: 100px 0 100px 0;
     color: white;
 }
 
-#cha-2-container {
+.cha-2-div {
     text-align: center;
     background-color: seagreen;
     margin: 0 auto;
@@ -40,32 +44,10 @@ p {
 
 }
 
+/* ---------- CHALLENGE 3 ------------ */
 
 
-
-
-
-
-
-
-
-/* -------------- CHALLENGE 3 ---------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* -------------- CHALLENGE 4 ---------- */
+/* ---------- CHALLENGE 4 ------------ */
 
 #cha-4-submit, button {
     width: 268px;
