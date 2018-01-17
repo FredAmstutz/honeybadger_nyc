@@ -12,17 +12,13 @@ button2.addEventListener('click', function() {
     text.innerHTML = 'No, I\'m right!';
 });
 
-
-
 // 2. Create an HTML page with a large element on the page that says "Don't hover over me" inside of it. When you hover over the element, send an alert to the user that says, "Hey, I told you not to hover over me!"
 
-const theDiv = document.getElementById('cha-2-container');
+const theDiv = document.querySelector('.cha-2-div');
 
 // theDiv.addEventListener('mouseover', function() {
 //     alert('Hey, I told you not to hover over me!');
-// })
-
-
+// });
 
 // 3. Create an HTML page with javascript that listens for a keypress.
 // When the user presses that key, the text of the H1 should show the value of the key they have pressed.
@@ -40,17 +36,17 @@ document.addEventListener('keypress', function(e) {
 // if anything is wrong, send an alert message saying "incorrect"
 // Your page should also include an H1 tag. If the information in the form is correct, have Javascript change the text in the H1.
 
-const heading = document.getElementById('cha-4-heading');
+const formTitle = document.getElementById('cha-4-heading');
 const username = document.getElementById('cha-4-username');
-const email = document.getElementById('cha-4-email');
 const password = document.getElementById('cha-4-password');
-const submit = document.getElementById('cha-4-submit');
+const submitButton = document.getElementById('cha-4-submit');
 
-submit.addEventListener('click', function() {
-    if(password.value == 12345678) {
-        heading.innerHTML = 'Thanks for signing up!';
+submitButton.addEventListener('click', function(e) {
+    e.preventDefault();
+    if(password.value == 12345678 && !isNaN(username.value)) {
+        formTitle.innerHTML = 'Thanks for signing up!';
     }
     else {
-        alert('incorrect');
+        alert('Please fill the fields out correctly.');
     }
 })
