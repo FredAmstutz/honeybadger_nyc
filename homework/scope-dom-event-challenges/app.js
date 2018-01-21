@@ -43,7 +43,8 @@ const submitButton = document.getElementById('cha-4-submit');
 
 submitButton.addEventListener('click', function(e) {
     e.preventDefault();
-    if(password.value == 12345678 && !isNaN(username.value)) {
+    const hasNumber = /\d/;
+    if(password.value == 12345678 && hasNumber.test(username.value)) {
         formTitle.innerHTML = 'Thanks for signing up!';
     }
     else {
