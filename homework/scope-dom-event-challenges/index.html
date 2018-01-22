@@ -1,41 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="./style.css">
-    <title>Scope/DOM/Event Challenges</title>
-</head>
-<body>
-    <div class='cha-1-container'>
-        <h1>CHALLENGE 1</h1>
-        <div class='cha-1-content'>
-            <button id='cha-1-button1'>Button 1</button>
-            <p id='cha-1-text'></p>
-            <button id='cha-1-button2'>Button 2</button>
-        </div>
-    </div>
-    
-    <div class='cha-2-container'>
-        <h1>CHALLENGE 2</h1>
-        <div class='cha-2-div'>
-            <h1 class='cha-2-h1'>Don't hover over me</h1>
-        </div>
-    </div>
-    
-    <div class='cha-3-container'>
-        <h1>CHALLENGE 3</h1>
-        <p>The key you pressed is: </p><span id="cha-3-key"></span>
-    </div>
-    
-    <div class='cha-4-container'>
-        <h1>CHALLENGE 4</h1>
-        <form>
-            <h1 id='cha-4-heading'>Please Sign Up Below</h1>
-            <input type='text' id='cha-4-username' placeholder='Username'></input>
-            <input id='cha-4-email' placeholder='Email'></input></br>
-            <input type='text' id='cha-4-password' placeholder='Password'></input></br>
-            <button id='cha-4-submit'>Submit</button>
-        </form>
-    </div>
-    <script src="./app.js"></script>
-</body>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+        <title>Scope/DOM/Event Mini Challenges</title>
+    </head>
+    <body>
+        <section class='cha-1-container'>
+            <h1>CHALLENGE 1</h1>
+            <div class='cha-1-content'>
+                <button class='cha-1-button1'>Button 1</button>
+                <p class='cha-1-text'></p>
+                <button class='cha-1-button2'>Button 2</button>
+            </div>
+        </section>
+        
+        <section class='cha-2-container'>
+            <h1>CHALLENGE 2</h1>
+            <div class='cha-2-div'>
+                <h1 class='cha-2-h1'>Don't hover over me</h1>
+            </div>
+        </section>
+        
+        <section class='cha-3-container'>
+            <h1>CHALLENGE 3</h1>
+            <p>The key you pressed is:</p> <br>
+            <h1 class="cha-3-key"></h1>
+        </section>
+        
+        <section class='cha-4-container'>
+            <h1>CHALLENGE 4</h1>
+            <form>
+                <h1 class='cha-4-heading'>Please Sign Up Below</h1>
+                <input type='text' class='cha-4-username' placeholder='Username'></input>
+                <input class='cha-4-email' placeholder='Email'></input></br>
+                <input type='password' class='cha-4-password' placeholder='Password'></input></br>
+                <button class='cha-4-submit'>Submit</button>
+            </form>
+        </section>
+        <script src="./app.js"></script>
+    </body>
 </html>

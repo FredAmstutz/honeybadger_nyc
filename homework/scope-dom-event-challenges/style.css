@@ -11,7 +11,7 @@ body {
 
 /* ---------- CHALLENGE 1 ------------ */
 
-#cha-1-button1, #cha-1-button2 {
+.cha-1-button1, .cha-1-button2 {
     display: inline-block;
     margin: 50px;
     height: 40px;
@@ -44,16 +44,16 @@ p {
 
 }
 
-/* ---------- CHALLENGE 3 ------------ */
+/* ---------- CHALLENGE 3 (NO STYLING)------------ */
 
 
 /* ---------- CHALLENGE 4 ------------ */
 
-#cha-4-submit, button {
+.cha-4-submit, button {
     width: 268px;
 }
 
-#cha-4-password {
+.cha-4-password {
     width: 260px;
     margin: 10px 0 10px 0;
 }
