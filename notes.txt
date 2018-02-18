@@ -1,0 +1,33 @@
+// SQL Day 2-18-18
+
+Relation vs. Non-Relation Databases
+
+Entity Relational Diagrams (ERD's)
+
+Databases are made of tables
+
+Creating our first Databases
+
+ORCHARD
+-acres (float)
+-location (string)
+-start_of_ops (date)
+-name (string)
+-revenue (int)
+
+TREE
+-plant_on (date)
+-health (int)
+-producerating (??)
+
+SPECIES
+-common_name (string)
+-scientific_name (string)
+
+primary-key
+
+Foreign key belongs to many, references the one
+
+many to many relationships have a join tables
+-The labeling creates the table i.e. memberships - people = mem_people
+
