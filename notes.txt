@@ -47,7 +47,7 @@ All statements end in a semicolo(;) NOT SEMANTIC LIKE IN JAVASCRIPT
 
 ALL SQL COMMANDS IN CAPS
 
-Commond commands:
+Common commands:
 
 \l lists all your Databases
 \c "NAME OF DATABASE" to change into a new database
