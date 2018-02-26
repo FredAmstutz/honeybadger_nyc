@@ -27,12 +27,33 @@ Using the file provided to seed your database.
 Some may require more than one query (i.e. you may need to get information about a team before you can complete a query for players). Test each command in PSQL to make sure it is correct:
 
 - List the names of all NFL teams
+
+SELECT name FROM teams;
+
 - List the stadium name and head coach of all NFC teams
+
+SELECT stadium, head_coach FROM teams WHERE conference = 'NFC';
+
 - List the head coaches of the AFC South
+
+SELECT head_coach FROM teams WHERE conference = 'AFC' AND division = 'South';
+
 - The total number of players in the NFL
+
+SELECT COUNT(name) FROM players;
+
 - The team names and head coaches of the NFC North and AFC East
+
+SELECT name, head_coach FROM teams WHERE conference = 'NFC' AND division = 'North' OR conference = 'AFC' AND division = 'East';
+
 - The 50 players with the highest salaries
+
+SELECT name, salary FROM players ORDER BY salary DESC LIMIT 50;
+
 - The average salary of all NFL players
+
+SELECT name, position FROM players WHERE salary < 10000000;
+
 - The names and positions of players with a salary above 10_000_000
 - The player with the highest salary in the NFL
 - The name and position of the first 100 players with the lowest salaries
