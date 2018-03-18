@@ -18,7 +18,7 @@ class Trillo extends Component {
 
     handleCardDelete(e) {
         const id = e.target.parentNode.dataset.id;
-        console.log(id);
+
         fetch(`/cards/${id}`, {
             method: 'DELETE',
             headers: {
@@ -26,14 +26,13 @@ class Trillo extends Component {
                 'Content-Type': 'application/json'
             }
         }).then(() => {
-            console.log('ITEM DELETED');
             this.getCards();
         })
     }
 
-    handleCardFinish() {
-        console.log('CARD FINISHED');
+    handleCardFinish(e) {
         const id = e.target.parentNode.dataset.id;
+
         fetch(`/cards/${id}`, {
             method: 'PUT',
             headers: {
@@ -43,7 +42,8 @@ class Trillo extends Component {
             body: { is_completed: true }
         }).then(() => {
             this.getCards();
-        })
+        });
+    }
 
     sortCardsByCompletion(array) {
         const completedCards = array.filter(card => card.is_completed);
@@ -74,18 +74,19 @@ class Trillo extends Component {
     }
 
     render() {
-        console.log('RENDERING');
         return (
             <div>
                 <h1>Trillo</h1>
                 <p><i>A honeybadger project</i></p>
-                <NewCardInput />
+                <NewCardInput
+                    getCards={this.getCards}
+                />
                 <CardColumn
                     heading={'todo'}
                     handleCardDelete={this.handleCardDelete}
                     handleCardFinish={this.handleCardFinish}
                     cards={this.state.uncompletedCards}
-                    />
+                />
                 <CardColumn
                     heading={'done'}
                     handleCardDelete={this.handleCardDelete}
