@@ -68,7 +68,6 @@ class CookieConfectionary extends Component {
                     <button onClick={this.setLemonCookie}>Add a lemon cookie</button>
                 </div>
                 <br/>
-                <br/>
                 <button onClick={this.clearCookies}>Clear cookies</button>
             </div>
         )
