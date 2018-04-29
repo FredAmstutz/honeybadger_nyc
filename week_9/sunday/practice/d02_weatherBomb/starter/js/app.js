@@ -44,11 +44,7 @@ $(function() {
         $('#results').append(template);
     }
 
-    getWeatherData('New York')
-        .then(transformWeatherData)
-        .then(renderWeatherData)
-
-        getWeatherData('London')
+    getWeatherData('Kansas City')
         .then(transformWeatherData)
         .then(renderWeatherData)
 });

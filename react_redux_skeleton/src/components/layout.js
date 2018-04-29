@@ -1,35 +1,40 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import * as userActions from '../actions/user-actions';
+import * as tweetActions from '../actions/tweets-actions';
 
-import { fetchUser } from '../actions/user-actions';
-import { fetchTweets } from '../actions/tweet-actions';
-
-connect((store) => {
-    return {
-        user: store.user.user,
-        userFetched: store.user.fetched,
-        tweets: store.tweets.tweets,
+class Layout extends Component {
+    constructor(props) {
+        super(props);
+        this.fetchTweets = this.fetchTweets.bind(this);
     }
-})
 
-export default class Layout extends Component {
     componentWillMount() {
-        this.props.dispatch(fetchUser());     
+        this.props.userActions.fetchUser(); 
+        this.fetchTweets();
     }
 
     fetchTweets() {
-        this.props.dispatch(fetchTweets());
+        this.props.tweetsActions.fetchTweets();
+    }
+
+    updateUserName() {
+        this.props.userActions.setUserName('Tacos');
     }
 
     render() {
         const { user, tweets } = this.props;
 
-        if(!tweets.length) {
-            return <button onClick={this.fetchTweets.bind(this)}>Load Tweets</button>
-        }
-
-        const mappedTweets = tweets.map(tweet => <li key={tweet.id}>{tweet.text}</li>)
-
+        const mappedTweets = tweets.map(tweet => {
+            return (
+                <li key={tweet.id}>
+                    <span>{tweet.content}</span>
+                    <span>{tweet.author}</span>
+                </li>
+            )
+        });
+        
         return (
             <div>
                 <h1>{user.name}</h1>
@@ -38,3 +43,20 @@ export default class Layout extends Component {
         )
     }
 }
+
+function mapStateToProps(state) {
+    return {
+        user: state.user.user,
+        userFetched: state.user.fetched,
+        tweets: state.tweets.tweets,
+    }
+}
+
+function mapDispatchToProps(dispatch) {
+    return {
+        userActions: bindActionCreators(userActions, dispatch),
+        tweetsActions: bindActionCreators(tweetActions, dispatch)
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Layout);
