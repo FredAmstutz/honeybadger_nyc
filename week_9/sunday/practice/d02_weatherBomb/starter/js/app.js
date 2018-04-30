@@ -1,4 +1,49 @@
 $(function() {
+
+    const laButton = document.getElementById('la');
+    const denverButton = document.getElementById('denver');
+    const kcButton = document.getElementById('kc');
+    const chicagoButton = document.getElementById('chicago');
+    const atlantaButton = document.getElementById('atlanta');
+    const nycButton = document.getElementById('nyc');
+
+    $(laButton).click(function() {
+        getWeatherData('Los Angeles')
+        .then(transformWeatherData)
+        .then(renderWeatherData) 
+    });
+
+    $(denverButton).click(function() {
+        getWeatherData('Denver')
+        .then(transformWeatherData)
+        .then(renderWeatherData) 
+    });
+
+    $(kcButton).click(function() {
+        getWeatherData('Kansas City')
+        .then(transformWeatherData)
+        .then(renderWeatherData) 
+    });
+
+    $(chicagoButton).click(function() {
+        getWeatherData('Chicago')
+        .then(transformWeatherData)
+        .then(renderWeatherData) 
+    });
+
+    $(atlantaButton).click(function() {
+        getWeatherData('Atlanta')
+        .then(transformWeatherData)
+        .then(renderWeatherData) 
+    });
+
+    $(nycButton).click(function() {
+        getWeatherData('New York')
+        .then(transformWeatherData)
+        .then(renderWeatherData) 
+    });
+
+
     function getWeatherData(city) {
         const apiCall = $.ajax({
             url: 'https://api.openweathermap.org/data/2.5/weather',
@@ -41,10 +86,6 @@ $(function() {
             <p>${lat}</p>
             <p>${lon}</p>
         `
-        $('#results').append(template);
+        $('#results').html(template);
     }
-
-    getWeatherData('Kansas City')
-        .then(transformWeatherData)
-        .then(renderWeatherData)
 });

@@ -1,4 +1,5 @@
 'use strict';
+
 module.exports = (sequelize, DataTypes) => {
   var tweet = sequelize.define('tweet', {
     author: DataTypes.STRING,
@@ -6,6 +7,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   tweet.associate = function(models) {
     // associations can be defined here
+    tweet.belongsTo(models.user, { foreignKey: 'user_id' })
   };
   return tweet;
 };
