@@ -1,11 +1,11 @@
 $(function() {
 
-    const laButton = document.getElementById('la');
-    const denverButton = document.getElementById('denver');
-    const kcButton = document.getElementById('kc');
-    const chicagoButton = document.getElementById('chicago');
-    const atlantaButton = document.getElementById('atlanta');
-    const nycButton = document.getElementById('nyc');
+    const laButton = $('#la');
+    const denverButton = $('#denver')
+    const kcButton = $('#kc');
+    const chicagoButton = $('#chicago');
+    const atlantaButton = $('#atlanta');
+    const nycButton = $('#nyc');
 
     $(laButton).click(function() {
         getWeatherData('Los Angeles')
