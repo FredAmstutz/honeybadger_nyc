@@ -1,29 +1,38 @@
+import axios from 'axios';
+import { setCookie, setCookieType } from './cookie-actions';
+
+
 export const fetchUserType = 'FETCH_USER_FULFILLED';
 
-export function fetchUser() {
-    return {
-        type: fetchUserType,
-        payload: {
-            name: 'Fred',
-            age: 26
-        }
+export function fetchUser(id) {
+    return function(dispatch) {
+        dispatch({ type: 'FETCHING_USER'})
+
+        axios.get(`/users/${id}`)
+            .then(function(response) {
+
+            })
+            .catch(function(err) {
+
+            })
     }
 }
 
-export const setUserNameType = 'SET_USER_NAME';
+export const creatingUserType = 'CREATING_USER';
+export const userCreatedType = 'USER_CREATED';
+export const userCreationError = 'USER_CREATION_ERROR';
 
-export function setUserName(name) {
-    return {
-        type: setUserNameType,
-        payload: name
-    }
-}
+export function createUser(data) {
+    return function(dispatch) {
+        dispatch({ type: 'CREATING_USER' });
 
-export const setUserAgeType = 'SET_USER_AGE';
-
-export function setUserAge(age) {
-    return {
-        type: setUserAgeType,
-        payload: age
+        axios.post('/users/signup', data)
+            .then(function(response) {
+                dispatch(setCookie('user_id', response.data.user.id, { expires: 86400 }));
+                dispatch({ type: userCreatedType, payload: response.data.user })
+            })
+            .catch(function(err) {
+                dispatch({ type:userCreationError, payload: err })
+            })
     }
 }

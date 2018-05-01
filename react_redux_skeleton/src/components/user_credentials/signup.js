@@ -6,17 +6,16 @@ import CredentialsForm from './credentials_form';
 import * as userActions from '../../actions/user-actions';
 
 class Signup extends Component {
-    handleSubmit() {
-        e.preventDefault();
-        const formBody = new FormData(e.target);
+    formHandler(values) {
+        this.props.userActions.createUser(values);
+        
     }
 
     render() {
         return (
             <div>
                 <CredentialsForm 
-                    handler={this.handleSubmit.bind(this)}
-                    action={'./users/signup'}
+                    formHandler={this.formHandler.bind(this)}
                 />
             </div>
         )
