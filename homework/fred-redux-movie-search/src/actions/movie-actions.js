@@ -5,7 +5,7 @@ export const fetchMoviesFulfilledType = 'FETCH_MOVIES_FULFILLED';
 
 export function fetchMovies(movie) {
     return function(dispatch) {
-        dispatch({ type: fetchMoviesType});
+        dispatch({ type: fetchMoviesType });
 
         axios.get(`http://www.omdbapi.com/?apikey=9c1996d3&s=${movie}`)
             .then(function(response) {
