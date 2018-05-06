@@ -1,48 +1,23 @@
 $(function() {
+    const errorTemplate = '<h2>Please enter a valid city, state, providence, country, continent, or other formally recognized region.</h2>';
 
-    const laButton = $('#la');
-    const denverButton = $('#denver')
-    const kcButton = $('#kc');
-    const chicagoButton = $('#chicago');
-    const atlantaButton = $('#atlanta');
-    const nycButton = $('#nyc');
+    const $searchInput = $('#search-input');
+    const $searchButton = $('#search-button');
 
-    $(laButton).click(function() {
-        getWeatherData('Los Angeles')
+    
+    $searchButton.click(function() {
+        getWeatherData($searchInput.val())
         .then(transformWeatherData)
-        .then(renderWeatherData) 
+        .then(renderWeatherData);
+        $searchInput.val('');
     });
-
-    $(denverButton).click(function() {
-        getWeatherData('Denver')
-        .then(transformWeatherData)
-        .then(renderWeatherData) 
+    
+    $searchInput.keyup(function(e) {
+        e.preventDefault();
+        if(e.keyCode === 13) {
+            $searchButton.click();
+        }
     });
-
-    $(kcButton).click(function() {
-        getWeatherData('Kansas City')
-        .then(transformWeatherData)
-        .then(renderWeatherData) 
-    });
-
-    $(chicagoButton).click(function() {
-        getWeatherData('Chicago')
-        .then(transformWeatherData)
-        .then(renderWeatherData) 
-    });
-
-    $(atlantaButton).click(function() {
-        getWeatherData('Atlanta')
-        .then(transformWeatherData)
-        .then(renderWeatherData) 
-    });
-
-    $(nycButton).click(function() {
-        getWeatherData('New York')
-        .then(transformWeatherData)
-        .then(renderWeatherData) 
-    });
-
 
     function getWeatherData(city) {
         const apiCall = $.ajax({
@@ -53,7 +28,10 @@ $(function() {
                 units: 'imperial'
             },
             dataType: 'json',
-            method: 'GET'
+            method: 'GET',
+            error: function() {
+                $('#results').html(errorTemplate);
+            }
         });
 
         return apiCall;
@@ -65,8 +43,6 @@ $(function() {
         const description = weatherData.weather[0].description;
         const lat = weatherData.coord.lat;
         const lon = weatherData.coord.lon;
-
-        // const { name, main: { temp: temperature }, weather: [ { description}], coord: { lat, long} } = weatherData;
 
         return {
             name,
@@ -81,10 +57,10 @@ $(function() {
         const { name, temperature, description, lat, lon} = updateWeatherData;
         const template = `
             <h1>${name}</h1>
-            <h2>${temperature}</h2>
-            <p>${description}</p>
-            <p>${lat}</p>
-            <p>${lon}</p>
+            <h2>Current Temperature: ${temperature}</h2>
+            <p>Description: ${description}</p>
+            <p>Latitude: ${lat}</p>
+            <p>Longitude: ${lon}</p>
         `
         $('#results').html(template);
     }
